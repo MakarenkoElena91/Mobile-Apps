@@ -7,6 +7,7 @@ TagManager:
   - Planet
   - Ground
   - Button
+  - ParticleSystem
   layers:
   - Default
   - TransparentFX

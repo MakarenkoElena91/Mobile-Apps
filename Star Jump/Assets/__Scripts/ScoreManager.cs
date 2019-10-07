@@ -1,19 +1,20 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoreManager : MonoBehaviour {
-    public Text timerText;
+    public TMP_Text timerText;
+    public TMP_Text highScoreText;
     private float secondsCount;
     private int score;
     private bool stopTimer;
     private int highscore;
-    public Text highScoreText;
-
+    
     void Start () {
         score = 0;
         highscore = PlayerPrefs.GetInt ("Highscore", 0);
-        highScoreText.text = "" + highscore;
+        highScoreText.text = "High Score " + highscore;
         stopTimer = false;
     }
 
@@ -27,7 +28,7 @@ public class ScoreManager : MonoBehaviour {
     public void UpdateTimerUI () {
         //set timer UI
         secondsCount += Time.deltaTime;
-        timerText.text = "" + (int) secondsCount;
+        timerText.text = "Score " + (int) secondsCount;
     }
 
     public void setScores () {

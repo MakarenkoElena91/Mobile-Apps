@@ -50,7 +50,7 @@ public class ChangeColor : MonoBehaviour
                 color.g = 218;
                 color.b = 0;
                 break;
-            default:
+            default://Yellow
                 color.r = 255;
                 color.g = 218;
                 color.b = 0;
@@ -64,6 +64,11 @@ public class ChangeColor : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().color = color;
         } else if(gameObject.tag == "Button") {
             gameObject.GetComponent<Image>().color = color;
+        }
+        else if(gameObject.tag == "ParticleSystem") {
+            ParticleSystem.MainModule setColor = gameObject.GetComponent<ParticleSystem>().main;
+            setColor.startColor = color;
+   Debug.Log(color);
         }
     }
  
