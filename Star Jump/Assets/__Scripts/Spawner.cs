@@ -14,11 +14,8 @@ public class Spawner : MonoBehaviour
     IEnumerator spawn(float seconds)
     {
         yield return new WaitForSeconds(seconds);
-        //Instantiate here
-        // for (int i = 0; i < 5; i++)
-        // {
+      
         Instantiate(Planet, new Vector3(6, Random.Range(-4f, 4f), 0), Quaternion.identity);
-        //}
         StartCoroutine(spawn(2f));
     }
 }
