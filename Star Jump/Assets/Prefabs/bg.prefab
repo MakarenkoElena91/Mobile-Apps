@@ -95,8 +95,6 @@ GameObject:
   - component: {fileID: 8684478221973303381}
   - component: {fileID: 8684478221973303383}
   - component: {fileID: 8684478221973303368}
-  - component: {fileID: 8684478221973303369}
-  - component: {fileID: 8684478221973303370}
   m_Layer: 0
   m_Name: bg
   m_TagString: Untagged
@@ -208,33 +206,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scrollSpeed: 3
   scrollOffset: 10.25
---- !u!114 &8684478221973303369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8684478221973303380}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68079e56bcba9a04cb84ac426b20e1d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8684478221973303370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8684478221973303380}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27b90ad8aa69dbe4bb2144184f8cb68e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOvertext: {fileID: 0}
-  gameOver: 0
-  scrollSpeed: 4
 --- !u!1001 &6233099935959759698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -242,11 +213,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8684478221973303382}
     m_Modifications:
-    - target: {fileID: 3316089342727538614, guid: ad09233522f217647b673db69a8c01cd,
-        type: 3}
-      propertyPath: m_Name
-      value: bg (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3316089342727538612, guid: ad09233522f217647b673db69a8c01cd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -301,6 +267,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3316089342727538614, guid: ad09233522f217647b673db69a8c01cd,
+        type: 3}
+      propertyPath: m_Name
+      value: bg (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad09233522f217647b673db69a8c01cd, type: 3}

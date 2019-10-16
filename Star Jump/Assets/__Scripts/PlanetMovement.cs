@@ -7,7 +7,7 @@ public class PlanetMovement : MonoBehaviour
     void FixedUpdate()
     {
         Scene scene = SceneManager.GetActiveScene();
-        if (scene.name == "Level3"){
+        if (scene.name == "Level1"){
             transform.Translate(Random.Range(-2f, -9f) * Time.deltaTime, 0, 0);
         }else
         {

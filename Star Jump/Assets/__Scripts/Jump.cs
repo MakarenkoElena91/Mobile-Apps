@@ -18,7 +18,7 @@ public class Jump : MonoBehaviour {
         //Store the current vertical input in the float moveVertical.
 
         if (Input.GetKeyDown (KeyCode.Space)) {
-            GetComponent<Rigidbody2D> ().velocity = Vector3.up * speed;
+            GetComponent<Rigidbody2D> ().velocity = Vector2.up * speed;
         }
 
 //touch tap on mobile phone
@@ -29,7 +29,7 @@ public class Jump : MonoBehaviour {
             }     
         }    
     }
-    void JumpMovement () {
-            GetComponent<Rigidbody2D> ().velocity = Vector3.up * speed;
-        }
+    // void JumpMovement () {
+    //         GetComponent<Rigidbody2D> ().velocity = Vector2.up * speed;
+    //     }
 }
