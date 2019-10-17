@@ -1702,7 +1702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6278052b24750694fbca9f5ac94ec522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetPrefab: {fileID: 4782022856291733092, guid: b9b7dbab19f1c0c499042ae2efa04633,
+  planetPrefab: {fileID: 900728909140882168, guid: fa32ef5c5fca5f442a36f1045989b594,
     type: 3}
 --- !u!4 &1685931348
 Transform:
@@ -1978,6 +1978,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6549556074501924401, guid: f0f1557530a6df94fa261d98c89ab1d3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 32.899933
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0f1557530a6df94fa261d98c89ab1d3, type: 3}

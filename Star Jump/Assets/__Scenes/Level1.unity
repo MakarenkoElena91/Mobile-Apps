@@ -1165,7 +1165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445fb0e691cd38f4bb8e38e3dc9c5f16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Planet: {fileID: 4782022856291733089, guid: b9b7dbab19f1c0c499042ae2efa04633, type: 3}
+  Planet: {fileID: 7684079734347743978, guid: ffde63e296536314b80cb2e655ae794d, type: 3}
 --- !u!4 &1911741300
 Transform:
   m_ObjectHideFlags: 0

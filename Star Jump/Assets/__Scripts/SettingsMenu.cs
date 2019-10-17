@@ -15,7 +15,7 @@ public class SettingsMenu : MonoBehaviour {
     public void SetVolume(float sliderValue)
     {
         mixer.SetFloat("Music", Mathf.Log10(sliderValue) * 20);
-        Debug.Log (sliderValue);
+        //Debug.Log (sliderValue);
     }
    
     public void SetColor (float r, float b, float g, float a) {
