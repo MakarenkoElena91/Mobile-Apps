@@ -3,7 +3,9 @@ guid: 6278052b24750694fbca9f5ac94ec522
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - planetPrefab: {fileID: 7684079734347743975, guid: ffde63e296536314b80cb2e655ae794d,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

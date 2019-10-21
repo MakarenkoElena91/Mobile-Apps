@@ -23,11 +23,12 @@ public class Collision : MonoBehaviour {
         if (col.gameObject.tag == "Planet" || col.gameObject.tag == "Ground") {
             doStuffOnCollision ();
         }
-        Debug.Log ("OnCollisionEnter2D");
+        //Debug.Log ("OnCollisionEnter2D");
     }
 
     public void doStuffOnCollision () {
-        camera.GetComponent<ScoreManager>().setScores();
+        camera.GetComponent<ScoreManager>().SetScores();
+        ScoreManager.GetScores();
 
         particleSystem.transform.position = rb2d.position;
         particleSystem.gameObject.SetActive (true);

@@ -6,7 +6,7 @@ public class BackGroundMovement : MonoBehaviour {
 
 	// Background scroll speed can be set in Inspector with slider
 	[Range(1f, 20f)]
-	public float scrollSpeed = 1f;
+	public float scrollSpeed = 3f;
 
 	// Scroll offset value to smoothly repeat backgrounds movement
 	public float scrollOffset;
@@ -24,7 +24,7 @@ public class BackGroundMovement : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
 		// Calculating new backgrounds position repeating it depending on scrollOffset
 		newPos = Mathf.Repeat (Time.time * - scrollSpeed, scrollOffset);
 

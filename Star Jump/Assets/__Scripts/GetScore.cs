@@ -1,21 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class GetScore : MonoBehaviour
-{
+public class GetScore : MonoBehaviour {
     private int score;
     public TMP_Text scoreText;
-    void Start()
-    {
-        score = PlayerPrefs.GetInt("Score");
-        scoreText.text = "" + score;
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Start () {
+        score = ScoreManager.GetScores ();
+        scoreText.text = "" + score;
     }
 }
