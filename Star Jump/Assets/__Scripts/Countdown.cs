@@ -10,9 +10,10 @@ public class Countdown : MonoBehaviour {
     public TMP_Text startText; // used for showing countdown from 3, 2, 1 
     // public TMP_Text score;
     public GameObject player;
-
+    public GameObject pauseMenu;
     void Start () {
         player.GetComponent<Rigidbody2D> ().bodyType = RigidbodyType2D.Static;
+       // pauseMenu.SetActive(false);
     }
 
     void Update () {

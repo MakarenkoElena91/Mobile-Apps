@@ -4,20 +4,35 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour {
     // Singleton instance.
-    public static AudioManager Instance = null;
+    private static AudioManager _instance;
+     public static AudioManager Instance
+     {
+         get
+         {
+             if (_instance==null)
+             {
+                 _instance = GameObject.FindObjectOfType<AudioManager>();
+                 DontDestroyOnLoad(_instance.gameObject);
+             }
+             return _instance;
+         }
+     }
 
     // Initialize the singleton instance.
     private void Awake () {
-        // If there is not already an instance of SoundManager, set it to this.
-        if (Instance == null) {
-            Instance = this;
-        }
-        //If an instance already exists, destroy whatever this object is to enforce the singleton.
-        else if (Instance != this) {
-            Destroy (gameObject);
-        }
-
-        //Set SoundManager to DontDestroyOnLoad so that it won't be destroyed when reloading our scene.
-        DontDestroyOnLoad (gameObject);
-    }
+         #region SingletonRun
+         if (_instance==null)
+         {
+             _instance = this;
+             DontDestroyOnLoad(this);
+         }
+         else
+         {
+             if ( this !=_instance)
+             {
+                 Destroy(this.gameObject);
+             }
+         }
+         #endregion        
+     }
 }

@@ -20,7 +20,7 @@ public class Collision : MonoBehaviour {
     }
 
     void OnCollisionEnter2D (Collision2D col) {
-        if (col.gameObject.tag == "Planet" || col.gameObject.tag == "Ground") {
+        if (col.gameObject.tag == "Planet" || col.gameObject.tag == "Ground" || col.gameObject.tag == "Ceiling") {
             doStuffOnCollision ();
         }
         //Debug.Log ("OnCollisionEnter2D");
@@ -37,6 +37,7 @@ public class Collision : MonoBehaviour {
         //Time.timeScale = 0.2f;//slow motion?
         render.enabled = false;
         gameObject.GetComponent<PolygonCollider2D> ().enabled = false;
+        
         soundEffect.PlayCollision();
     }
     IEnumerator delay (float seconds) {

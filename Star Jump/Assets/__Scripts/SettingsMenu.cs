@@ -11,17 +11,14 @@ public class SettingsMenu : MonoBehaviour {
 
     public AudioMixer mixer;
 
-    // //Called when Slider is moved
+    // Called when Slider is moved
     public void SetVolume(float sliderValue)
     {
         mixer.SetFloat("Music", Mathf.Log10(sliderValue) * 20);
-        //Debug.Log (sliderValue);
     }
    
     public void SetColor (float r, float b, float g, float a) {
-        //Debug.Log ("color");
         color = new Color (r, b, g, a);
-        //star.material.SetColor ("_Color", Color.color);
     }
 
 }

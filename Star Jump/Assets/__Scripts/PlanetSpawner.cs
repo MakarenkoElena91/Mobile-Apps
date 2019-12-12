@@ -45,7 +45,7 @@ public class PlanetSpawner : MonoBehaviour {
                 planet.transform.position = currPoint.transform.position;
             }
         } else if (scene.name == "Level3") {
-            for (int i = 0; i < 2; i++) {
+            for (int i = 0; i < 1; i++) {
                 do {
                     randomIndex = getRandom ();
                 } while (randomIndex == previousPos);

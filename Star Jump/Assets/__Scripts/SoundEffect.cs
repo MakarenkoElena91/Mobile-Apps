@@ -14,6 +14,7 @@ public class SoundEffect : MonoBehaviour
     }
 
      public void PlayCollision () {
+       if(audioSource!=null)
         audioSource.Play ();
     }
 }
